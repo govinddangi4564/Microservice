@@ -1,0 +1,5 @@
+package com.hospitalManagement.AppointmentService.config;
+
+public class RestTemplateConfig {
+
+}

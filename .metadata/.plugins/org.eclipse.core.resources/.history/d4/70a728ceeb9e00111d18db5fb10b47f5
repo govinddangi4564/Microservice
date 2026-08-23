@@ -1,0 +1,5 @@
+package com.hospitalManagement.AppointmentService.entity;
+
+public class Appointment {
+
+}

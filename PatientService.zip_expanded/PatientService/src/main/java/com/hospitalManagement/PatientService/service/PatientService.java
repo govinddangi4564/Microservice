@@ -1,0 +1,46 @@
+package com.hospitalManagement.PatientService.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.hospitalManagement.PatientService.entity.Patient;
+import com.hospitalManagement.PatientService.repository.PatientRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class PatientService {
+
+	private final PatientRepository repo;
+
+	public Patient save(Patient p) {
+		return repo.save(p);
+	}
+
+	public List<Patient> readAll() {
+		return repo.findAll();
+	}
+
+	public Patient getById(Long id) {
+		return repo.findById(id).orElseThrow(() -> new RuntimeException("Patient not found"));
+	}
+
+	public Patient update(Long id, Patient p) {
+		Patient existing = repo.findById(id).orElseThrow(() -> new RuntimeException("Patient not found"));
+
+		existing.setName(p.getName());
+		existing.setAge(p.getAge());
+		existing.setGender(p.getGender());
+		existing.setPhone(p.getPhone());
+		existing.setEmail(p.getEmail());
+		existing.setAddress(p.getAddress());
+
+		return repo.save(existing);
+	}
+
+	public void delete(Long id) {
+		repo.deleteById(id);
+	}
+}

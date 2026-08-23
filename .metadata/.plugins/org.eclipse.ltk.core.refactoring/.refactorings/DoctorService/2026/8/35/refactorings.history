@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;repository&apos; in &apos;com.hospitalManagement.DoctorService.service.DoctorService.DoctorService(...)&apos; to &apos;repo&apos;&#x0D;&#x0A;- Original project: &apos;DoctorService&apos;&#x0D;&#x0A;- Original element: &apos;com.hospitalManagement.DoctorService.service.DoctorService.DoctorService(DoctorRepository).repository&apos;&#x0D;&#x0A;- Renamed element: &apos;repository&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;repository&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.hospitalManagement.DoctorService.service{DoctorService.java[DoctorService~DoctorService~QDoctorRepository;@repository!358!384!375!384!QDoctorRepository;!0!true" name="repo" references="true" stamp="1787486037038" version="1.0"/>
+</session>

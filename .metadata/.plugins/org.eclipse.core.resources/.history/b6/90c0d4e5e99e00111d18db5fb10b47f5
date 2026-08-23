@@ -1,0 +1,5 @@
+package com.hospitalManagement.DoctorService.controller;
+
+public class DoctorController {
+
+}

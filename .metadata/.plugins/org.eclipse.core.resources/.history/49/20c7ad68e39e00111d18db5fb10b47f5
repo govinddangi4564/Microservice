@@ -1,0 +1,5 @@
+package com.hospitalManagement.PatientService.repository;
+
+public interface PatientRepository {
+
+}

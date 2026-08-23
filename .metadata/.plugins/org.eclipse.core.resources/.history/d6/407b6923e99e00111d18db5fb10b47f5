@@ -1,0 +1,5 @@
+package com.hospitalManagement.DoctorService.repository;
+
+public class DoctorRepository {
+
+}

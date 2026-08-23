@@ -1,0 +1,45 @@
+package com.hospitalManagement.DoctorService.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.hospitalManagement.DoctorService.entity.Doctor;
+import com.hospitalManagement.DoctorService.repository.DoctorRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class DoctorService {
+
+	private final DoctorRepository repo;
+
+	public Doctor save(Doctor doctor) {
+		return repo.save(doctor);
+	}
+
+	public List<Doctor> getAll() {
+		return repo.findAll();
+	}
+
+	public Doctor getById(Long id) {
+		return repo.findById(id).orElseThrow(() -> new RuntimeException("Doctor not found"));
+	}
+
+	public Doctor update(Long id, Doctor doctor) {
+
+		Doctor existing = getById(id);
+
+		existing.setName(doctor.getName());
+		existing.setSpecialization(doctor.getSpecialization());
+		existing.setEmail(doctor.getEmail());
+		existing.setPhone(doctor.getPhone());
+
+		return repo.save(existing);
+	}
+
+	public void delete(Long id) {
+		repo.deleteById(id);
+	}
+}

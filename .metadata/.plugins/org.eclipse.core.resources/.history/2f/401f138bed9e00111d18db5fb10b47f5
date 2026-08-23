@@ -1,0 +1,20 @@
+package com.hospitalManagement.AppointmentService.service;
+
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.hospitalManagement.AppointmentService.repository.AppointmentRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class AppointmentService {
+
+	private final AppointmentRepository repo;
+	private final RestTemplate restTemplate;
+
+	private static final String DOCTOR_SERVICE = "http://localhost:8081/doctor/";
+	private static final String PATIENT_SERVICE = "http://localhost:8082/patient/";
+
+}
