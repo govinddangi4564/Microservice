@@ -1,5 +1,0 @@
-package com.hospitalManagement.PatientService.entity;
-
-public class Patient {
-
-}

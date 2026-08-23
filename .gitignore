@@ -1,0 +1,74 @@
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Virtual machine crash logs
+hs_err_pid*
+
+# Build folders
+/target/
+/build/
+/out/
+
+# Maven
+/.mvn/
+mvnw
+mvnw.cmd
+
+# Gradle
+.gradle/
+gradlew
+gradlew.bat
+
+# IDE files
+
+## Eclipse
+.project
+.classpath
+.settings/
+.metadata/
+bin/
+.plugins/
+
+## IntelliJ IDEA
+.idea/
+*.iml
+
+## NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+## VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+.metadata/
+bin/
+*.class
+*.log
+*.tmp
+*.bak
+.settings/
+.project
+.classpath
+.gradle/
+build/
