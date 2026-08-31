@@ -20,13 +20,17 @@ public class AppointmentService {
 	private final AppointmentRepository repo;
 
 	// RestTemplate
-	private final RestTemplate restTemplate;
+//	private final RestTemplate restTemplate;
 
 	// WebClient
 	private final WebClient webClient;
 
-	private static final String PATIENT_SERVICE = "http://localhost:8081/patient/";
-	private static final String DOCTOR_SERVICE = "http://localhost:8082/doctor/";
+//	private static final String PATIENT_SERVICE = "http://localhost:8081/patient/";
+//	private static final String DOCTOR_SERVICE = "http://localhost:8082/doctor/";
+
+	private static final String PATIENT_SERVICE = "http://patient-service/patient/";
+
+	private static final String DOCTOR_SERVICE = "http://doctor-service/doctor/";
 
 	public Appointment create(Appointment ap) {
 
