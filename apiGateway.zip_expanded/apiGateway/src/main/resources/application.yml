@@ -1,0 +1,33 @@
+spring:
+    application:
+        name: apiGateway
+
+    cloud:
+        gateway:
+            server:
+                webflux:
+                    routes:
+                        - id: doctorService
+                          uri: lb://doctorService
+                          predicates:
+                              - Path=/doctor/**
+
+                        - id: patientService
+                          uri: lb://patientService
+                          predicates:
+                              - Path=/patient/**
+
+                        - id: appointmentService
+                          uri: lb://appointmentService
+                          predicates:
+                              - Path=/appointment/**
+
+server:
+    port: 8080
+
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka/
+        register-with-eureka: true
+        fetch-registry: true

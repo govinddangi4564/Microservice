@@ -28,9 +28,9 @@ public class AppointmentService {
 //	private static final String PATIENT_SERVICE = "http://localhost:8081/patient/";
 //	private static final String DOCTOR_SERVICE = "http://localhost:8082/doctor/";
 
-	private static final String PATIENT_SERVICE = "http://patient-service/patient/";
+	private static final String PATIENT_SERVICE = "http://patientService/patient/";
 
-	private static final String DOCTOR_SERVICE = "http://doctor-service/doctor/";
+	private static final String DOCTOR_SERVICE = "http://doctorService/doctor/";
 
 	public Appointment create(Appointment ap) {
 
