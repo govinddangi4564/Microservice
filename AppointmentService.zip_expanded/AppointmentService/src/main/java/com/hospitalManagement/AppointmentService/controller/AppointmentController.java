@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.hospitalManagement.AppointmentService.dto.AppointmentResponseDto;
 import com.hospitalManagement.AppointmentService.dto.DoctorDto;
 import com.hospitalManagement.AppointmentService.dto.PatientDto;
 import com.hospitalManagement.AppointmentService.entity.Appointment;
@@ -32,6 +33,11 @@ public class AppointmentController {
 	@GetMapping
 	public List<Appointment> getAll() {
 		return service.getAll();
+	}
+
+	@GetMapping("/viewAll")
+	public List<AppointmentResponseDto> viewAll() {
+		return service.viewAll();
 	}
 
 	@GetMapping("/{id}")
