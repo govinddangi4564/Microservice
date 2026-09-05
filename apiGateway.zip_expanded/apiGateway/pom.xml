@@ -27,10 +27,10 @@
 
 	<dependencies>
 
-		<!-- Spring Cloud Gateway -->
+		<!-- Spring Cloud Gateway Web MVC -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-gateway-server-webflux</artifactId>
+			<artifactId>spring-cloud-starter-gateway-server-webmvc</artifactId>
 		</dependency>
 
 		<!-- Eureka Client -->
